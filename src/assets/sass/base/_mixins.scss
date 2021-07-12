@@ -1,0 +1,41 @@
+@mixin Column($justify: center, $align: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin Row($justify: center, $align: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin ButtonRed() {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: $primary;
+  color: white;
+  transition: 500ms;
+}
+
+@mixin ButtonRedActive() {
+  background-color: $white;
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+@mixin ButtonRedDisabled() {
+  background-color: $button-disable;
+  border: 1px solid $button-disable;
+  color: $white;
+}
+
+@mixin Input() {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid $alto;
+  outline: none;
+  transition: border 500ms;
+}

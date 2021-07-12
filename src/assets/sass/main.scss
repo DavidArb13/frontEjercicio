@@ -1,0 +1,66 @@
+@import 'base/variables';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import 'base/mixins';
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: $first_font;
+}
+
+a {
+  font-family: $first_font;
+}
+
+input {
+  font-family: $first_font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  color: $primary;
+  font-weight: bold;
+  font-family: $sec_font;
+}
+
+h1,
+h2 {
+  font-size: $title-mobile;
+}
+
+h3 {
+  font-size: $subtitle-mobile;
+}
+
+.title {
+  font-family: $sec_font;
+}
+.text {
+  font-family: $first_font;
+}
+.subtitle {
+  font-family: $third_font;
+}
+
+.sec-font {
+  font-family: $first_font;
+}
+.sec-font {
+  font-family: $sec_font;
+}
+.third-font {
+  font-family: $third_font;
+}
+[no-ttransform],
+.no-ttransform {
+  text-transform: none;
+}
+.pc-round {
+  border-radius: 2pc;
+}
